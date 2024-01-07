@@ -1,0 +1,12 @@
+Source: purple-telegram
+Maintainer: Merlijn Wajer <merlijn@wizzup.org>
+Section: net
+Priority: optional
+Standards-Version: 4.5.1
+Build-Depends: debhelper (>= 13), libglib2.0-dev, libpurple-dev
+
+Package: purple-telegram
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libglib2.0-0, libpurple0, fakeroot
+Description: Telegram protocol plugin for libpurple
+	Allows the purple IM library to connect to Telegram servers.
