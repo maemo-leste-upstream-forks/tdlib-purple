@@ -1,3 +1,15 @@
 #!/usr/bin/make -f
 %:
-	dh $@
+	dh $@ --buildsystem=cmake
+
+override_dh_auto_configure:
+	./build_debian.sh --builddirectory=build
+
+override_dh_auto_build:
+	dh_auto_build --builddirectory=build
+
+override_dh_auto_test:
+	dh_auto_test --builddirectory=build
+
+override_dh_auto_install:
+	dh_auto_install --builddirectory=build
