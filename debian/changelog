@@ -1,5 +1,9 @@
-purple-telegram (20240103-1) UNRELEASED; urgency=medium
+purple-telegram (20240111-1) UNRELEASED; urgency=medium
 
-  * ...
+  * Initial release for testing
+  * The debian/rules package could use improvements
+  * The tdlib dir currently ends up in $HOME/.local/share/tdlib - this means
+    that apparmor needs to be disabled for this to work currently, as it
+    doesn't allow telepathy processes access to $HOME/.local/share/
 
- -- Merlijn Wajer <merljn@wizzup.org>  Thu, 04 Jan 2024 23:53:35 +0100
+ -- Merlijn Wajer <merljn@wizzup.org>  Thu, 11 Jan 2024 20:24:55 +0100
