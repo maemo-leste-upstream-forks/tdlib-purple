@@ -3,7 +3,7 @@ Maintainer: Merlijn Wajer <merlijn@wizzup.org>
 Section: net
 Priority: optional
 Standards-Version: 4.5.1
-Build-Depends: debhelper (>= 13), libglib2.0-dev, libpurple-dev, git
+Build-Depends: debhelper (>= 13), libglib2.0-dev, libpurple-dev, libwebp-dev, libpng-dev, g++, cmake, pkg-config, gettext, libssl-dev
 
 Package: purple-telegram
 Architecture: any
