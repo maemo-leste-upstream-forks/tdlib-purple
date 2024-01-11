@@ -376,7 +376,13 @@ void PurpleTdClient::removeOldProxies()
 
 std::string PurpleTdClient::getBaseDatabasePath()
 {
-    return std::string(purple_user_dir()) + G_DIR_SEPARATOR_S + config::configSubdir;
+    const char *home = getenv("HOME");
+
+    if (!home) {
+        return std::string(purple_user_dir()) + G_DIR_SEPARATOR_S + config::configSubdir;
+    } else {
+        return std::string(home) + G_DIR_SEPARATOR_S + std::string(".local/share") + G_DIR_SEPARATOR_S + config::configSubdir;
+    }
 }
 
 static void stuff(td::td_api::setTdlibParameters &parameters)
