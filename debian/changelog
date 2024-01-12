@@ -1,4 +1,4 @@
-purple-telegram (20240111-1) UNRELEASED; urgency=medium
+purple-telegram (20240112-1) UNRELEASED; urgency=medium
 
   * Initial release for testing
   * The debian/rules package could use improvements
