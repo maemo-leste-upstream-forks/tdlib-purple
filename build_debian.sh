@@ -4,7 +4,7 @@ set -e
   pushd td
     mkdir build
     pushd build
-      cmake -DCMAKE_BUILD_TYPE=Release ..
+      cmake -DCMAKE_INSTALL_PREFIX:PATH=/usr -DCMAKE_BUILD_TYPE=Release ..
       make -j1
       make install DESTDIR=destdir
     popd
