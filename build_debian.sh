@@ -1,6 +1,11 @@
 #!/bin/bash
 set -e
 
+# armhf runs out of address space it seems, with g++ 10, so let's try -O1 and
+# see if it passes
+export CFLAGS=-O1
+export CXXFLAGS=-O1
+
   pushd td
     mkdir build
     pushd build
