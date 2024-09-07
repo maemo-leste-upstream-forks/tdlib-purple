@@ -1,6 +1,7 @@
 #!/bin/bash
 
 set -e
+cd -P -- "$(dirname -- "$0")"
 
 JOBS="$(nproc || echo 1)"
 
