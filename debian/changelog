@@ -1,3 +1,9 @@
+purple-telegram (20250517-1) UNRELEASED; urgency=medium
+
+  * Rebase on latest tdlib-purple master
+
+ -- Merlijn Wajer <merljn@wizzup.org>  Sat, 17 May 2025 20:37:37 +0200
+
 purple-telegram (20240112.3-1) UNRELEASED; urgency=medium
 
   * Initial release for testing
